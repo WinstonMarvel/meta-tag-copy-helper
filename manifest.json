@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Meta Tag Copy Helper",
+  "description": "This extension assists in copying the title, keywords and description tags with simple key combinations",
+  "version": "1.0",
+
+  "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "Meta Tag Copy Helper"
+   },
+   "icons":{
+      "128": "icon128.png"
+   },
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "handler.js" ],
+      "matches": [ "http://*.com/", "https://*.com/"]
+   } ],
+   "permissions": ["http://*/*", "https://*/*", "tabs"]
+}
