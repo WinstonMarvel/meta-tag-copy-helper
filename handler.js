@@ -1,7 +1,6 @@
 var selection = window.getSelection();
 var range = document.createRange();
 
-window.onload = function(){
 	document.addEventListener("keypress", (event)=>{
 	var key = event.key;
 	if((event.key=="t" || event.key=="T") && event.shiftKey){
@@ -18,9 +17,6 @@ window.onload = function(){
 	}
 });
 
-
-
-}
 
 
 function copyText(string){
