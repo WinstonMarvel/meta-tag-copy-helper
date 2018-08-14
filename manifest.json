@@ -19,7 +19,7 @@
   },
   "content_scripts": [ {
       "all_frames": true,
-      "js": [ "handler.js" ],
+      "js": [ "jquery.js", "handler.js" ],
       "matches": ["http://*.com/*", "https://*.com/*"]
    } ]
 }
